@@ -5,7 +5,7 @@ const app = express(); // to use Express
 
 app.use(express.urlencoded({ extended: true }));
 const mongodb = //to connect to mongo DB
-  "mongodb+srv://cnq:xTBUmOKJ0GcQNCCN@cluster0.7uqde.mongodb.net/test?retryWrites=true&w=majority";
+  "mongodb+srv://cnq:<myPassword>@cluster0.7uqde.mongodb.net/test?retryWrites=true&w=majority";
 mongoose
   .connect(mongodb, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
